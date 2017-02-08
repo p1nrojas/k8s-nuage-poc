@@ -1,0 +1,31 @@
+[root@vsd1 ~]# monit summary
+The Monit daemon 5.17.1 uptime: 1h 38m
+
+Process 'zookeeper'                 Running
+Program 'zookeeper-status'          Status ok
+Program 'vsd-core-status'           Status ok
+Program 'vsd-common-status'         Status ok
+Filesystem 'rootfs'                 Accessible
+Program 'ntp-status'                Status ok
+Process 'mysql'                     Running
+Program 'mysql-status'              Status ok
+
+�
+Process 'mediator'                  Running
+
+�
+- name: Get monit summary for all stats process on VSD
+Program 'mediator-status'           Status ok
+File 'jboss-console-log'            Accessible
+File 'monit-log'                    Accessible
+File 'mediator-out'                 Accessible
+File 'zookeeper-out'                Accessible
+File 'vsd-syslog'                   Accessible
+Program 'keyserver-status'          Status ok
+Process 'jboss'                     Running
+Program 'jboss-status'              Status ok
+Program 'ejbca-status'              Status ok
+Process 'ejabberd'                  Running
+Program 'ejabberd-status'           Status ok
+System 'vsd1.sdn40r61.lab'          Running
+

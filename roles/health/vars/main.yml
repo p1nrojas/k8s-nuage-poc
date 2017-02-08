@@ -1,0 +1,5 @@
+---
+# Stats process/program running on vsd
+ vsd_stats:
+   - "vsd-core-status"
+

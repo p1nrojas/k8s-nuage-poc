@@ -1,10 +1,10 @@
-## Do not use it yet. working in progress
+## Do not use yet. work in progress
 # Health Check
 Checking health at VSD by the moment only (monit summary)
 ```
 ansible-playbook -i hosts health.yml
 ```
-#Install License
+# Install License
 Install license to VSD
 
 ```

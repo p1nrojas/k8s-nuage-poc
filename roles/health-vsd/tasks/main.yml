@@ -6,6 +6,7 @@
   remote_user: root
 
 - name: Verify vsd-stats-status program on VSD
-  fail: msg="Cannot verify vsd-stats-status. Program not running"
-  when: chk['state']['vsd-core-status'] != "status ok"
+  fail: msg="Cannot verify {{ item }}. Program not running"
+  when: chk['state']['{{ item }}'] != "status ok"
+  with_items: "{{vsd_stats}}"
 

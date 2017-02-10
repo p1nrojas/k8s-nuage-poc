@@ -1,0 +1,11 @@
+---
+- name: Installing license to VSD
+  local_action: command python {{playbook_dir}}/roles/license/files/license_install.py {{ vsd_user }} {{ vsd_passwd }} {{ vsd_org }} {{ inventory_hostname }} {{ license_key }} 
+  register: output
+
+- name: Verification Result Failure Status
+  fail: msg={{ output.stdout }}
+  when: output.stdout != "success"
+
+- name: Verification Result Success Status
+  debug: var=output.stdout

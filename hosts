@@ -1,2 +1,5 @@
 [vsd]
-vsd1.sdn40r61.lab  ansible_host=10.10.10.10 ansible_user=root
+10.10.10.10  ansible_host=10.10.10.10 ansible_user=root
+[vsc]
+vsc1.sdn40r61.lab  ansible_host=10.10.10.11
+vsc2.sdn40r61.lab  ansible_host=10.10.10.12
